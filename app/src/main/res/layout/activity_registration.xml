@@ -131,7 +131,7 @@
 
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/inputPassword1"
@@ -139,8 +139,8 @@
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="24dp"
                 android:background="@drawable/button"
-                android:backgroundTint="#5250CD"
-                android:text="Login"
+                android:text="Register"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
         </RelativeLayout>
