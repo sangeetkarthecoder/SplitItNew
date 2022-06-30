@@ -13,13 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SplitIt"
         tools:targetApi="31">
-
-
-            android:name=".VerifyPhone"
-            android:exported="false" />
-
-
-
         <activity
             android:name=".Registration"
             android:exported="false" />
