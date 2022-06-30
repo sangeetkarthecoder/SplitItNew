@@ -13,15 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SplitIt"
         tools:targetApi="31">
-<<<<<<< HEAD
+
 
             android:name=".VerifyPhone"
             android:exported="false" />
-        <activity
-            android:name=".PhoneAuth"
-            android:exported="false" />
-=======
->>>>>>> parent of e858d85 (verify activity)
+
+
+
         <activity
             android:name=".Registration"
             android:exported="false" />
