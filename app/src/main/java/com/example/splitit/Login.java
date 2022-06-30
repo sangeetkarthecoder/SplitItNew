@@ -15,11 +15,11 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         linear = findViewById(R.id.signup);
-
+        startActivity(new Intent(Login.this,PhoneAuth.class));
         linear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Login.this,Registration.class));
+                startActivity(new Intent(Login.this,PhoneAuth.class));
             }
         });
     }
