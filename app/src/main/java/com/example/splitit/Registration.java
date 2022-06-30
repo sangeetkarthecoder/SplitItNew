@@ -19,7 +19,7 @@ public class Registration extends AppCompatActivity {
         linear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               
+
             }
         });
     }

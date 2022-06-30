@@ -13,15 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SplitIt"
         tools:targetApi="31">
-        <activity
-<<<<<<< HEAD
+
             android:name=".VerifyPhone"
             android:exported="false" />
         <activity
             android:name=".PhoneAuth"
-=======
-            android:name=".Verifivation"
->>>>>>> 596eaf4bb08dbdf222a15d86ae757c2c0689dabf
             android:exported="false" />
         <activity
             android:name=".Registration"
