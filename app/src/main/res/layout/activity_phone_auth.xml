@@ -1,257 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PhoneAuth"
-    android:background="@color/white">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    tools:context=".PhoneAuth">
 
-    <TextView
-        android:id="@+id/phonetext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="Verify Phone Number"
-        android:textColor="@color/black"
-        android:textSize="25dp" />
 
     <ImageView
-        android:id="@+id/image"
-        android:layout_width="314dp"
-        android:layout_height="314dp"
-        android:src="@drawable/otp_pic"
-        android:layout_below="@id/phonetext"
-        android:layout_marginStart="90dp"/>
+        android:id="@+id/phoneimg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/mobile_auth" />
+
     <TextView
-        android:id="@+id/digitcode"
-        android:layout_marginTop="300dp"
+        android:id="@+id/verifytw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="We will send you a\n 4 digit code"
+        android:layout_alignBottom="@+id/phoneimg"
         android:layout_centerHorizontal="true"
-        android:textColor="@color/grey"/>
+        android:layout_marginBottom="-40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Verify your phone number"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/chatsapptw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/verifytw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-30dp"
+        android:text="Split-it will send an SMS message to verify your phone number"
+        android:textSize="12sp" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardvforphonenumbner"
+        android:id="@+id/cardview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/digitcode"
-        app:cardCornerRadius="30dp"
-        android:backgroundTint="@color/white"
-        >
-        <RelativeLayout
+        android:layout_alignBottom="@+id/chatsapptw"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="-140dp"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            >
-
-            <TextView
-                android:id="@+id/enterpphone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="18dp"
-                android:layout_marginTop="14dp"
-                android:layout_marginEnd="18dp"
-                android:layout_marginBottom="18dp"
-                android:text="Enter phone number"
-                android:textColor="@color/grey"/>
-
-            <com.hbb20.CountryCodePicker
-                android:id="@+id/countrycodepicker"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="28dp"
-                app:ccp_showArrow="false"
-                app:ccp_showFlag="false"
-                app:ccp_showNameCode="false" />
-
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/phonenumber"
-                android:layout_width="135dp"
-                android:layout_height="25dp"
-                android:layout_marginTop="36dp"
-                android:layout_toRightOf="@id/countrycodepicker"
-                android:background="@drawable/flag_transparent"
-                android:maxLength="10"
-                android:textColor="@color/black" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/continuebutton"
-                android:layout_width="140dp"
-                android:layout_height="45dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginEnd="40dp"
-                android:background="@drawable/button"
-                android:text="Continue"
-                android:textColor="@color/black"/>
-
-        </RelativeLayout>
-
-
-    </androidx.cardview.widget.CardView>
-
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/cardvforphonenumbner"
-        android:layout_marginTop="20dp"
-        android:columnCount="3"
-        android:rowCount="4">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/number1"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
             android:layout_margin="10dp"
-            android:background="@drawable/button"
-            android:backgroundTint="@color/purple"
-            android:text="1"
-            android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:orientation="vertical">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/number2"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="10dp"
-            android:background="@drawable/button"
-            android:backgroundTint="@color/purple"
-            android:text="2"
-            android:textColor="@color/black"
-            android:textSize="30sp"/>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/number3"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="10dp"
-            android:background="@drawable/button"
-            android:backgroundTint="@color/purple"
-            android:text="3"
-            android:textSize="30sp"
-            android:textColor="@color/black" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/number4"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="10dp"
-            android:background="@drawable/button"
-            android:backgroundTint="@color/purple"
-            android:text="4"
-            android:textSize="30sp"
-            android:textColor="@color/black" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/number5"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="10dp"
-            android:background="@drawable/button"
-            android:backgroundTint="@color/purple"
-            android:text="5"
-            android:textSize="30sp"
-            android:textColor="@color/black" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/number6"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="10dp"
-            android:background="@drawable/button"
-            android:backgroundTint="@color/purple"
-            android:text="6"
-            android:textSize="30sp"
-            android:textColor="@color/black" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/number7"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="10dp"
-            android:background="@drawable/button"
-            android:backgroundTint="@color/purple"
-            android:text="7"
-            android:textSize="30sp"
-            android:textColor="@color/black" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/number8"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="10dp"
-            android:background="@drawable/button"
-            android:backgroundTint="@color/purple"
-            android:text="8"
-            android:textSize="30sp"
-            android:textColor="@color/black" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/number9"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="10dp"
-            android:background="@drawable/button"
-            android:backgroundTint="@color/purple"
-            android:text="9"
-            android:textSize="30sp"
-            android:textColor="@color/black" />
-
-        <ImageView
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="10dp"
-            android:background="@color/white"
-            android:text=""
-            android:textColor="@color/black" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/number0"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="10dp"
-            android:background="@drawable/button"
-            android:backgroundTint="@color/purple"
-            android:text="0"
-            android:textColor="@color/black"
-            android:textSize="30sp"/>
-
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/backspacebutton"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_margin="10dp"
-            app:cardCornerRadius="15dp"
-            android:layout_marginStart="20dp"
-            android:background="@drawable/button"
-            android:backgroundTint="@color/purple"
-            android:drawableStart="@drawable/ic_backspace_black_24dp"
-            android:textColor="@color/black"
-            android:textSize="30sp">
-
-            <RelativeLayout
+            <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <ImageView
-                    android:layout_width="40dp"
+                <com.hbb20.CountryCodePicker
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_row="0"
+                    android:layout_column="0" />
 
-                    android:layout_height="40dp"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/ic_backspace_black_24dp" />
-            </RelativeLayout>
+                <EditText
+                    android:id="@+id/phoneNum"
+                    android:layout_width="223dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/textviewdrawable"
+                    android:ems="10"
+                    android:hint="Enter your phone number"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:text=""
+                    android:windowSoftInputMode="stateVisible" />
 
-        </com.google.android.material.card.MaterialCardView>
+            </GridLayout>
 
-
-    </GridLayout>
-
-
-
+            <Button
+                android:id="@+id/continuebtn"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTINUE"
+                android:backgroundTint="#00120B"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
