@@ -12,9 +12,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MainActivity extends AppCompatActivity  {
 
     ActivityMainBinding binding;
-
-
-
     BottomNavigationView navBar;
 
     @SuppressLint("NonConstantResourceId")

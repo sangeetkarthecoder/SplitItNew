@@ -24,7 +24,7 @@
         android:layout_centerInParent="true"
         android:layout_marginBottom="-40dp"
         android:fontFamily="sans-serif-black"
-        android:text="Verify +917828355408"
+        android:text="Verify"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -55,19 +55,25 @@
             android:layout_margin="10dp"
             android:orientation="vertical">
 
-            <com.mukesh.OtpView
+            <com.chaos.view.PinView
                 android:id="@+id/otpv"
-                android:layout_marginTop="5dp"
+                style="@style/PinWidget.PinView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:cursorVisible="true"
                 android:inputType="number"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 android:layout_gravity="center"
-                android:itemBackground="@color/grey"
-                app:OtpItemCount="6"
-                android:windowSoftInputMode="stateVisible"
-                app:OtpLineColor="#B9BBB4"
-                app:OtpViewType="line"
-                />
+                app:cursorWidth="2dp"
+                app:hideLineWhenFilled="true"
+                app:itemCount="6"
+                app:itemHeight="48dp"
+                app:itemRadius="4dp"
+                app:itemSpacing="0dp"
+                app:itemWidth="48dp"
+                app:lineWidth="2dp"
+                app:viewType="rectangle" />
 
             <Button
                 android:id="@+id/contbtn"

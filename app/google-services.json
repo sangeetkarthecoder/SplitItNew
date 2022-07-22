@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "1080323585918",
-    "project_id": "splitit-e9991",
-    "storage_bucket": "splitit-e9991.appspot.com"
+    "project_number": "617409341724",
+    "project_id": "split-it-51598",
+    "storage_bucket": "split-it-51598.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1080323585918:android:22e008ed4cf23400d0e52f",
+        "mobilesdk_app_id": "1:617409341724:android:e094c3c827e3ee484f32d9",
         "android_client_info": {
           "package_name": "com.example.splitit"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1080323585918-fu87ee2gobgg1pvieg52g6fbn9mtdbvv.apps.googleusercontent.com",
+          "client_id": "617409341724-9q5p9pbo4o1h045f0gktbho2hfjvb47b.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDkwBcZzD5UmaY4gLimJzlK2-o9DmY-PF0"
+          "current_key": "AIzaSyB6tBOU2KASe2jNEW26edH7UQZF8230AeM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1080323585918-fu87ee2gobgg1pvieg52g6fbn9mtdbvv.apps.googleusercontent.com",
+              "client_id": "617409341724-9q5p9pbo4o1h045f0gktbho2hfjvb47b.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
