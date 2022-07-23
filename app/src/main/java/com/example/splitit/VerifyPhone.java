@@ -8,11 +8,11 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.splitit.databinding.ActivityPhoneAuthBinding;
 import com.example.splitit.databinding.ActivityVerifyPhoneBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -25,6 +25,7 @@ import com.google.firebase.auth.PhoneAuthProvider;
 import java.util.concurrent.TimeUnit;
 
 public class VerifyPhone extends AppCompatActivity {
+        ActivityVerifyPhoneBinding binding;
 
     ActivityVerifyPhoneBinding binding;
     FirebaseAuth auth;
@@ -94,4 +95,13 @@ public class VerifyPhone extends AppCompatActivity {
             }
         });
 }
+
+
+
+
+
+
+
+
+    }
 }

@@ -65,7 +65,7 @@
             </LinearLayout>
 
             <EditText
-                android:id="@+id/inputEmail"
+                android:id="@+id/inputRegistration"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/lineaer"
@@ -89,7 +89,7 @@
                 android:id="@+id/inputPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/inputEmail"
+                android:layout_below="@+id/inputRegistration"
                 android:layout_marginStart="24dp"
 
                 android:layout_marginTop="18dp"
@@ -108,7 +108,7 @@
                 android:textColorHint="@color/black" />
 
             <EditText
-                android:id="@+id/inputPassword1"
+                android:id="@+id/inputConfirmPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/inputPassword"
@@ -134,7 +134,7 @@
                 android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/inputPassword1"
+                android:layout_below="@id/inputConfirmPassword"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="24dp"
@@ -159,7 +159,6 @@
             android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
             android:layout_marginStart="120dp"
             android:text="Already a User?"
             android:textColor="@color/black"
@@ -168,12 +167,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@id/text"
             android:paddingStart="2dp"
             android:text="SIGN IN"
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
     </LinearLayout>
 
 </RelativeLayout>

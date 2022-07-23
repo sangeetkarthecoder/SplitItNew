@@ -1,11 +1,9 @@
 package com.example.splitit;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.LinearLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Registration extends AppCompatActivity {
 
@@ -16,11 +14,6 @@ public class Registration extends AppCompatActivity {
         setContentView(R.layout.activity_registration);
         linear = findViewById(R.id.signin);
 
-        linear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
     }
 }

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#f9f9f9"
     tools:context=".VerifyPhone">
@@ -74,15 +76,8 @@
                 app:itemWidth="48dp"
                 app:lineWidth="2dp"
                 app:viewType="rectangle" />
+    tools:context=".VerifyPhone"
+    android:background="@color/white">
 
-            <Button
-                android:id="@+id/contbtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="#00120B"
-                android:text="CONTINUE" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>

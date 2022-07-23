@@ -8,23 +8,19 @@
         <entry key="..\:/Split-It/app/src/main/res/layout/activity_main.xml" value="0.14130434782608695" />
         <entry key="..\:/Split-It/app/src/main/res/layout/activity_registration.xml" value="0.22" />
         <entry key="..\:/Split-It/app/src/main/res/layout/activity_verifivation.xml" value="0.1796875" />
-        <entry key="..\:/Users/golub/AndroidStudioProjects/Split-It/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/golub/AndroidStudioProjects/Split-It/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/golub/AndroidStudioProjects/Split-It/app/src/main/res/layout/activity_phone_auth.xml" value="0.264" />
-        <entry key="..\:/Users/golub/AndroidStudioProjects/Split-It/app/src/main/res/layout/activity_verify_phone.xml" value="0.264" />
-        <entry key="..\:/Users/golub/AndroidStudioProjects/Split-It/app/src/main/res/layout/fragment_friend_.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/golub/AndroidStudioProjects/Split-It/app/src/main/res/layout/fragment_group_.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/golub/AndroidStudioProjects/Split-It/app/src/main/res/layout/fragment_notification_.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/golub/AndroidStudioProjects/Split-It/app/src/main/res/layout/fragment_profile_.xml" value="0.22826086956521738" />
         <entry key="app/src/main/res/drawable-v24/ic_baseline_email_24.xml" value="0.103" />
         <entry key="app/src/main/res/drawable-v24/ic_baseline_security_24.xml" value="0.103" />
+        <entry key="app/src/main/res/drawable/backgroundrrr.xml" value="0.1635" />
         <entry key="app/src/main/res/drawable/button.xml" value="0.103" />
         <entry key="app/src/main/res/drawable/group.xml" value="0.1655" />
         <entry key="app/src/main/res/drawable/ic_baseline_app_registration_24.xml" value="0.1455" />
         <entry key="app/src/main/res/drawable/ic_baseline_login_24.xml" value="0.1455" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.14" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable/ic_otp_pic.xml" value="0.1635" />
         <entry key="app/src/main/res/drawable/inputbg.xml" value="0.103" />
+        <entry key="app/src/main/res/drawable/splash_screen.xml" value="0.1635" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.22864583333333333" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.125" />
         <entry key="app/src/main/res/layout/activity_phone_auth.xml" value="0.25" />
