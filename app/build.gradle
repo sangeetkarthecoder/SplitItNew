@@ -49,6 +49,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     implementation 'com.hbb20:ccp:2.6.0'
     implementation 'io.github.chaosleung:pinview:1.4.4'
-    implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.1.2'
     implementation platform('com.google.firebase:firebase-bom:30.2.0')
+    implementation 'io.github.chaosleung:pinview:1.4.4'
 }
