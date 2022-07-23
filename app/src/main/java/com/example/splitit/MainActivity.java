@@ -11,9 +11,7 @@ import com.example.splitit.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity  {
 
     ActivityMainBinding binding;
-
-
-
+    BottomNavigationView navBar;
 
     @SuppressLint("NonConstantResourceId")
     @Override

@@ -7,6 +7,12 @@
     tools:context=".PhoneAuth"
     android:background="@color/white">
 
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/CP"
+                    android:layout_width="130dp"
+                    android:layout_height="match_parent"
+                    android:layout_row="0"
+                    android:layout_column="0" />
 
 
 
