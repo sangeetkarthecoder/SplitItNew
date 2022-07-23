@@ -6,19 +6,7 @@
     tools:context=".Friend_Fragment"
     android:background="@color/white">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="shivam kuamr "
-            android:layout_centerInParent="true"
-            android:textColor="@color/black"/>
-
-    </RelativeLayout>
 
 
 </ScrollView>
