@@ -65,7 +65,7 @@
             </LinearLayout>
 
             <EditText
-                android:id="@+id/inputRegistration"
+                android:id="@+id/inputUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/lineaer"
@@ -89,7 +89,7 @@
                 android:id="@+id/inputPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/inputRegistration"
+                android:layout_below="@+id/inputUsername"
                 android:layout_marginStart="24dp"
 
                 android:layout_marginTop="18dp"

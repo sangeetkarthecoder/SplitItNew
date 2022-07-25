@@ -1,6 +1,7 @@
 package com.example.splitit;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,12 +15,13 @@ import com.example.splitit.databinding.FragmentFriendBinding;
 public class Friend_Fragment extends Fragment {
 
     FragmentFriendBinding binding;
-
+    UserAdapter userAdapter;
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
 
+        Log.i("fjsdafk","jfdskalfjdsalfjdsklafjdklsafjdsaklf");
 
 
     }

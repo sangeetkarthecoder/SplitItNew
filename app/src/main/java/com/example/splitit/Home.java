@@ -1,6 +1,7 @@
 package com.example.splitit;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -44,6 +45,7 @@ public class Home extends AppCompatActivity {
                     navBar.getMenu().getItem(3).setChecked(true);
                     break;
             }
+            Log.i("shviajdkfj","fjskdfaklsdjf");
             return false;
         });
 
@@ -59,7 +61,14 @@ public class Home extends AppCompatActivity {
         group_fragment = new Group_Fragment();
         notification_fragment = new Notification_Fragment();
         profile_fragment = new Profile_Fragment();
-        navBar = findViewById(R.id.navigationbar);
+        Log.i("fjalsdkfjkdls","fjaklsdfjkladsfjkldsjf");
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentview,friend_fragment ).commit();
         itemselectedfromnavigationbar();
+        Log.i("Reaching here","sdjfkldsfj");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 }

@@ -1,14 +1,10 @@
 package com.example.splitit;
 
-import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,16 +18,15 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
+
 import java.util.concurrent.TimeUnit;
 
 public class VerifyPhone extends AppCompatActivity {
 
     ActivityVerifyPhoneBinding binding;
-
-    ActivityVerifyPhoneBinding binding;
     FirebaseAuth auth;
     String verificationID;
-    ProgressDialog dialog;
+    ProgressBar dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +76,7 @@ public class VerifyPhone extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()) {
-                            Intent intent = new Intent(VerifyPhone.this, MainActivity.class);
+                            Intent intent = new Intent(VerifyPhone.this, Home.class);
                             startActivity(intent);
                             finishAffinity();
                         }
@@ -91,18 +86,7 @@ public class VerifyPhone extends AppCompatActivity {
                     }
                 });
 
-                Intent intent = new Intent(VerifyPhone.this, MainActivity.class);
-                startActivity(intent);
             }
         });
-}
-
-
-
-
-
-
-
-
     }
 }

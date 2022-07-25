@@ -10,6 +10,7 @@
         <entry key="..\:/Split-It/app/src/main/res/layout/activity_verifivation.xml" value="0.1796875" />
         <entry key="app/src/main/res/drawable-v24/ic_baseline_email_24.xml" value="0.103" />
         <entry key="app/src/main/res/drawable-v24/ic_baseline_security_24.xml" value="0.103" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1635" />
         <entry key="app/src/main/res/drawable/backgroundrrr.xml" value="0.1635" />
         <entry key="app/src/main/res/drawable/button.xml" value="0.103" />
         <entry key="app/src/main/res/drawable/group.xml" value="0.1655" />
@@ -27,12 +28,14 @@
         <entry key="app/src/main/res/layout/activity_registration.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_verifivation.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_verify_phone.xml" value="0.1838768115942029" />
+        <entry key="app/src/main/res/layout/conversationview.xml" value="0.18802083333333333" />
         <entry key="app/src/main/res/layout/fragment_friend_.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/fragment_group_.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/fragment_notification_.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/fragment_profile_.xml" value="0.1" />
         <entry key="app/src/main/res/layout/friendchat_activity.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/iphone_12_pro_max___1.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/textviewdrawable.xml" value="0.22864583333333333" />
         <entry key="app/src/main/res/menu/bottom_nav_bar.xml" value="0.22864583333333333" />
       </map>
     </option>
