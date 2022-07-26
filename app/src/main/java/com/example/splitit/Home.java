@@ -19,6 +19,7 @@ public class Home extends AppCompatActivity {
 
     BottomNavigationView navBar;
     private void itemselectedfromnavigationbar(){
+        navBar = findViewById(R.id.navigationbar);
         binding.navigationbar.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){
                 case R.id.friend:
