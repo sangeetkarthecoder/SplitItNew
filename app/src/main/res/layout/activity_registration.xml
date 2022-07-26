@@ -1,176 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registration"
-    android:background="@color/white">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f9f9f9"
+    tools:context=".Registration">
 
-    <ImageView
-        android:id="@+id/registerimage"
-        android:layout_width="300dp"
-        android:layout_height="250dp"
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/phoneimg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/registerimage" />
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_baseline_app_registration_24" />
+
+    <TextView
+        android:id="@+id/verifytw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/phoneimg"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Profile Info"
+        android:textColor="#00120B"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/chatsapptw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/verifytw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-30dp"
+        android:text="Please enter your name and an optional profile image"
+        android:textSize="12sp" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/car"
-        android:layout_below="@+id/registerimage"
-        android:layout_alignParentBottom="true"
-        android:outlineAmbientShadowColor="@color/design_default_color_surface"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="100dp"
+        android:layout_alignBottom="@+id/chatsapptw"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="-140dp"
+        app:cardCornerRadius="15dp">
 
-        android:backgroundTint="@color/white"
-        app:cardCornerRadius="20dp">
-
-        <RelativeLayout
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:id="@+id/lineaer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <TextView
-                        android:id="@+id/loginText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-
-                        android:text="Register"
-                        android:textColor="@color/black"
-                        android:textSize="44sp"
-                        android:textStyle="bold" />
-
-                    <ImageView
-                        android:id="@+id/imageView2"
-                        android:layout_width="41dp"
-                        android:layout_height="45dp"
-                        android:layout_marginTop="10dp"
-                        android:layout_toRightOf="@id/loginText"
-                        app:srcCompat="@drawable/ic_baseline_app_registration_24" />
-                </RelativeLayout>
-
-            </LinearLayout>
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
 
             <EditText
-                android:id="@+id/inputUsername"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/lineaer"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="24dp"
-                android:background="@drawable/inputbg"
-                android:drawableLeft="@drawable/ic_baseline_person_24"
-                android:drawablePadding="10dp"
                 android:ems="10"
-                android:hint=" Username"
-                android:inputType="textEmailAddress"
-                android:paddingLeft="20dp"
-                android:paddingTop="13dp"
-                android:paddingRight="20dp"
-                android:paddingBottom="13dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black" />
-
-            <EditText
-                android:id="@+id/inputPassword"
+                android:inputType="textPersonName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/inputUsername"
-                android:layout_marginStart="24dp"
+                android:text=""
+                android:id="@+id/name"
+                android:padding="10dp"
+                android:background="@drawable/textviewdrawable"
+                android:hint="Enter your name"/>
 
-                android:layout_marginTop="18dp"
-                android:layout_marginEnd="24dp"
-                android:background="@drawable/inputbg"
-                android:drawableLeft="@drawable/ic_baseline_security_24"
-                android:drawablePadding="10dp"
-                android:ems="10"
-                android:hint=" Password"
-                android:inputType="textPassword"
-                android:paddingLeft="20dp"
-                android:paddingTop="13dp"
-                android:paddingRight="20dp"
-                android:paddingBottom="13dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black" />
-
-            <EditText
-                android:id="@+id/inputConfirmPassword"
+            <Button
+                android:id="@+id/contbtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/inputPassword"
-                android:layout_marginStart="24dp"
-
-                android:layout_marginTop="18dp"
-                android:layout_marginEnd="24dp"
-                android:background="@drawable/inputbg"
-                android:drawableLeft="@drawable/ic_baseline_security_24"
-                android:drawablePadding="10dp"
-                android:ems="10"
-                android:hint="Confirm Password"
-                android:inputType="textPassword"
-                android:paddingLeft="20dp"
-                android:paddingTop="13dp"
-                android:paddingRight="20dp"
-                android:paddingBottom="13dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black" />
-
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnRegister"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/inputConfirmPassword"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginEnd="24dp"
-                android:background="@drawable/button"
-                android:text="Register"
-                android:textColor="@color/white"
-                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#A3F7B5"
+                android:text="Setup Profile"
+                android:textColor="#00120B"
                 android:textStyle="bold" />
-        </RelativeLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.cardview.widget.CardView>
-
-
-    <LinearLayout
-        android:id="@+id/signin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp">
-
-
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
-            android:text="Already a User?"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="2dp"
-            android:text="SIGN IN"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
-    </LinearLayout>
 
 </RelativeLayout>
