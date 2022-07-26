@@ -1,4 +1,4 @@
-package com.example.splitit;
+package com.example.splitit.Fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

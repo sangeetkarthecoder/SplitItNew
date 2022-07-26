@@ -1,4 +1,4 @@
-package com.example.splitit;
+package com.example.splitit.Activities;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -8,6 +8,8 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.splitit.R;
 
 public class Login extends AppCompatActivity {
 
@@ -23,6 +25,6 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         linear = findViewById(R.id.signup);
 
-        linear.setOnClickListener(v -> startActivity(new Intent(Login.this,Registration.class)));
+        linear.setOnClickListener(v -> startActivity(new Intent(Login.this, Registration.class)));
     }
 }

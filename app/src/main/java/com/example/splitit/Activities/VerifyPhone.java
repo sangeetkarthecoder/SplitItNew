@@ -1,4 +1,4 @@
-package com.example.splitit;
+package com.example.splitit.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -76,7 +76,7 @@ public class VerifyPhone extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()) {
-                            Intent intent = new Intent(VerifyPhone.this, Home.class);
+                            Intent intent = new Intent(VerifyPhone.this, Registration.class);
                             startActivity(intent);
                             finishAffinity();
                         }

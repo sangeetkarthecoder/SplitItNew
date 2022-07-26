@@ -1,17 +1,17 @@
-package com.example.splitit;
+package com.example.splitit.Fragments;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.splitit.ModuleClass.User;
+import com.example.splitit.Adapters.UserAdapter;
 import com.example.splitit.databinding.FragmentFriendBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -66,6 +66,9 @@ public class Friend_Fragment extends Fragment {
 
             }
         });
+
+
+
         return binding.getRoot();
     }
 }
