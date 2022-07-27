@@ -35,6 +35,7 @@ public class Registration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityRegistrationBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        getSupportActionBar().hide();
 
         auth = FirebaseAuth.getInstance();
         storage = FirebaseStorage.getInstance();

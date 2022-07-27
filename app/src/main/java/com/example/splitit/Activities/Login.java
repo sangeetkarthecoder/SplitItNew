@@ -24,7 +24,6 @@ public class Login extends AppCompatActivity {
         getWindow().setStatusBarColor(Color.TRANSPARENT);
         setContentView(R.layout.activity_login);
         linear = findViewById(R.id.signup);
-
         linear.setOnClickListener(v -> startActivity(new Intent(Login.this, Registration.class)));
     }
 }
