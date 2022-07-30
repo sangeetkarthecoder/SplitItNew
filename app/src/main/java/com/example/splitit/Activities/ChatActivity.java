@@ -51,6 +51,7 @@ public class ChatActivity extends AppCompatActivity {
         ReceiverRoom = receiverUID + senderUID;
         database = FirebaseDatabase.getInstance();
 
+
         database.getReference().child("Chats")
                         .child(SenderRoom)
                                 .child("Messages").addValueEventListener(new ValueEventListener() {
@@ -73,15 +74,15 @@ public class ChatActivity extends AppCompatActivity {
         binding.sendbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(binding.messageBox.getText().toString().isEmpty())
+                    return;
+
                 String msgTxt = binding.messageBox.getText().toString();
 
                 Date date = new Date();
 
                 Messages messages = new Messages(msgTxt,senderUID,date.getTime());
                 binding.messageBox.setText("");
-                if(binding.messageBox.getText().toString().equals("")) {
-                    binding.messageBox.setError("Empty text");
-                }
                 database.getReference()
                         .child("Chats")
                         .child(SenderRoom)

@@ -56,7 +56,9 @@ public class Friend_Fragment extends Fragment {
                 users.clear();
                 for(DataSnapshot dataSnapshot: snapshot.getChildren() ){
                     User user  = dataSnapshot.getValue(User.class);
-                    users.add(user);
+                    assert user != null;
+                    if(!user.getuid().equals(auth.getUid()))
+                        users.add(user);
                 }
                 usersAdapter.notifyDataSetChanged();
             }

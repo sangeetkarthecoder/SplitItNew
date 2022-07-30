@@ -35,7 +35,6 @@ public class VerifyPhone extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityVerifyPhoneBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        getSupportActionBar().hide();
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 

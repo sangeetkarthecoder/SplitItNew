@@ -22,7 +22,6 @@ public class PhoneAuth extends AppCompatActivity {
 
         binding = ActivityPhoneAuthBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        getSupportActionBar().hide();
 
         binding.continuebtn.setOnClickListener(new View.OnClickListener() {
             @Override
