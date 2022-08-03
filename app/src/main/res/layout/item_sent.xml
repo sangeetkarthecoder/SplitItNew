@@ -12,6 +12,7 @@
         android:background="@drawable/sentdrawable"
         android:padding="5dp"
         android:text="Hi"
+        android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

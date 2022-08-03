@@ -12,6 +12,7 @@
         android:background="@drawable/received_drawable"
         android:padding="5dp"
         android:text="Hello"
+        android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
