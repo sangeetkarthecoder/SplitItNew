@@ -1,6 +1,7 @@
-package com.example.splitit;
+package com.example.splitit.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.splitit.Activities.ChatActivity;
+import com.example.splitit.ModuleClass.User;
+import com.example.splitit.R;
 import com.example.splitit.databinding.ConversationviewBinding;
 
 import java.util.ArrayList;
@@ -39,6 +43,16 @@ public class UserAdapter extends  RecyclerView.Adapter<UserAdapter.UsersviewHold
                 .load(user.getProfileimage())
                 .placeholder(R.drawable.ic_baseline_person_24)
                 .into(holder.binding.personimage);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, ChatActivity.class);
+                intent.putExtra("name", user.getName());
+                intent.putExtra("uid", user.getuid());
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override

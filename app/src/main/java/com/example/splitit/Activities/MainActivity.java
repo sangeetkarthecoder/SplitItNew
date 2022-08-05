@@ -1,4 +1,4 @@
-package com.example.splitit;
+package com.example.splitit.Activities;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;

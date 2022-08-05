@@ -1,10 +1,15 @@
-package com.example.splitit;
+package com.example.splitit.Activities;
 
 import android.os.Bundle;
 import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.splitit.Fragments.Friend_Fragment;
+import com.example.splitit.Fragments.Group_Fragment;
+import com.example.splitit.Fragments.Notification_Fragment;
+import com.example.splitit.Fragments.Profile_Fragment;
+import com.example.splitit.R;
 import com.example.splitit.databinding.ActivityHomeBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -15,7 +20,7 @@ public class Home extends AppCompatActivity {
     Friend_Fragment friend_fragment;
     Group_Fragment group_fragment;
     Notification_Fragment notification_fragment;
-    Profile_Fragment  profile_fragment;
+    Profile_Fragment profile_fragment;
 
     BottomNavigationView navBar;
     private void itemselectedfromnavigationbar(){

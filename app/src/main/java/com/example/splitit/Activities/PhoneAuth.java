@@ -1,4 +1,4 @@
-package com.example.splitit;
+package com.example.splitit.Activities;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -50,7 +50,7 @@ public class PhoneAuth extends AppCompatActivity {
         super.onStart();
         auth = FirebaseAuth.getInstance();
         if(auth.getCurrentUser() != null)
-            startActivity(new Intent(PhoneAuth.this,Home.class));
+            startActivity(new Intent(PhoneAuth.this, Home.class));
     }
 }
 

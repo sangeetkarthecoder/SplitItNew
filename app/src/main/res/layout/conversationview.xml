@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:id="@+id/TW"
     android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
     android:padding="10dp">
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -27,12 +29,11 @@
         android:id="@+id/personlastmessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="last message"
         android:layout_marginStart="10dp"
-        android:layout_toRightOf="@id/personimage"
-        android:textColor="@color/grey"
         android:layout_marginTop="30dp"
-        />
+        android:layout_toRightOf="@id/personimage"
+        android:text="last message"
+        android:textColor="@color/grey" />
 
     <TextView
         android:id="@+id/time"
@@ -45,6 +46,12 @@
         android:textColor="@color/grey"
         android:textSize="18dp" />
 
-    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="65dp"
+        android:background="#B9BBB4">
+
+    </RelativeLayout>
 
 </RelativeLayout>

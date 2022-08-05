@@ -1,4 +1,4 @@
-package com.example.splitit;
+package com.example.splitit.ModuleClass;
 
 public class User {
     private String name, uid, phonenumber, profileimage;

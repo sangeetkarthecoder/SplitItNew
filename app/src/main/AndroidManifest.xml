@@ -1,59 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.splitit" >
+    package="com.example.splitit">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:usesCleartextTraffic="true"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SplitIt"
-        tools:targetApi="31" >
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
         <activity
-            android:name=".Home"
+            android:name=".Activities.ChatActivity"
             android:exported="false"
-            android:theme="@style/fullscreen">
-
-
-        </activity>
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            />
         <activity
-            android:name=".VerifyPhone"
+            android:name=".Activities.Home"
+            android:exported="false"
+            android:theme="@style/fullscreen" />
+        <activity
+            android:name=".Activities.VerifyPhone"
             android:exported="false" />
         <activity
-            android:name=".PhoneAuth"
+            android:name=".Activities.PhoneAuth"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>>
-
+            </intent-filter>
 
         </activity>
         <activity
-            android:name=".Registration"
+            android:name=".Activities.Registration"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".Activities.Login"
             android:exported="false"
-            android:theme="@style/fullscreen"
-            >
-
-
-        </activity>
+            android:theme="@style/fullscreen" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activities.MainActivity"
             android:exported="false"
-            android:theme="@style/Splashscreen">
-
-
-        </activity>
+            android:theme="@style/Splashscreen" />
     </application>
 
 </manifest>
