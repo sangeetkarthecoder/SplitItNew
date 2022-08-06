@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 
 import com.example.splitit.Adapters.MessagesAdapter;
@@ -70,6 +71,7 @@ public class ChatActivity extends AppCompatActivity {
 
                     }
                 });
+
 
         binding.sendbtn.setOnClickListener(new View.OnClickListener() {
             @Override

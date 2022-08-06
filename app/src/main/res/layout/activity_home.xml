@@ -8,6 +8,7 @@
     android:background="@color/white">
 
 
+
     <FrameLayout
         android:id="@+id/fragmentview"
         android:layout_width="match_parent"
@@ -19,7 +20,7 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigationbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:background="@color/white"
         app:itemIconTint="@color/black"

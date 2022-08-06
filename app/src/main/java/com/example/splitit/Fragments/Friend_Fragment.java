@@ -40,7 +40,7 @@ public class Friend_Fragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentFriendBinding.inflate(inflater,container,false);
         auth = FirebaseAuth.getInstance();
@@ -61,6 +61,7 @@ public class Friend_Fragment extends Fragment {
                         users.add(user);
                 }
                 usersAdapter.notifyDataSetChanged();
+
             }
 
             @Override
