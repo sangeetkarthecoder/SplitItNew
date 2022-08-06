@@ -27,6 +27,15 @@ public class Group_Fragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding  = FragmentGroupBinding.inflate(inflater,container,false);
+
+
+        binding.AddGroupBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                
+            }
+        });
+
         return  binding.getRoot();
     }
 }

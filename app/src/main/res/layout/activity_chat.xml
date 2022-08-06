@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    android:paddingTop="?android:attr/actionBarSize"
     android:background="@drawable/chatbg"
     tools:context=".Activities.ChatActivity">
 
@@ -12,7 +13,7 @@
         android:id="@+id/RecyclerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
+        android:paddingTop="?android:attr/actionBarSize"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
