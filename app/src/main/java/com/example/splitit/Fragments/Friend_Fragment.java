@@ -61,6 +61,7 @@ public class Friend_Fragment extends Fragment {
                         users.add(user);
                 }
                 usersAdapter.notifyDataSetChanged();
+
             }
 
             @Override
